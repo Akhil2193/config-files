@@ -33,7 +33,7 @@ return packer.startup(function(use)
 
 	-- luea functions that many plugins user
 	use("nvim-lua/plenary.nvim")
-	use("olimorris/onedarkpro.nvim")
+	use("navarasu/onedark.nvim")
 	use({ "catppuccin/nvim", as = "catppuccin" })
 	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 	use("szw/vim-maximizer") -- maximizes and restores current window
@@ -99,6 +99,9 @@ return packer.startup(function(use)
 
 	-- git integration
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
+
+	-- change the tabline
+	use("romgrk/barbar.nvim")
 
 	if packer_bootstrap then
 		require("packer").sync()
